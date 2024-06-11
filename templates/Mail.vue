@@ -242,7 +242,7 @@ onMounted(() => {
             'minimize': window.fullscreen == 'minimize',
         }" @click="setActiveWindow" @dragstart="setActiveWindow" @click.native="setActiveWindow">
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"></iframe>
-    <form @submit="sendEmail" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdRBqHB0Z6GOjwE3jniX8-fHfJK-WcyzNTmkPFg4fg2SYPwpA/formResponse" class="window-style" id="container" target="hidden_iframe">
+    <form @submit="sendEmail" action="https://docs.google.com/forms/d/e/1FAIpQLSfXLjZq3b9iNHh2XQGrCjkwrr1fOrqzcCPQ9tRSR2RHMV9lGw/viewform?usp=sf_link" class="window-style" id="container" target="hidden_iframe">
         <div id="top-bar" class="top-bar-window" :class="
             windowsStore.activeWindow == window.windowId
                 ? 'top-bar'
