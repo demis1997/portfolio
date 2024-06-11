@@ -1,17 +1,9 @@
 <script setup>
 import interact from 'interactjs';
-import {
-    onMounted,
-    ref,
-    defineProps,
-    computed
-} from 'vue';
-import {
-    useWindowsStore
-} from '@/stores/windows'
-import {
-    useMailStore
-} from '@/stores/mail'
+import { onMounted, ref, defineProps, computed } from 'vue';
+import { useWindowsStore } from '@/stores/windows';
+import { useMailStore } from '@/stores/mail';
+import emailjs from 'emailjs-com';
 
 const props = defineProps({
     windowId: String,
@@ -36,22 +28,16 @@ const props = defineProps({
         type: String,
         default: "5%",
     },
-})
+});
 
-const position = ref({
-    x: 0,
-    y: 0
-})
-const tempPosition = ref({
-    x: 0,
-    y: 0
-})
-const windowsStore = useWindowsStore()
-const mailStore = useMailStore()
-const window = ref({})
-const ComponentName = props.nameOfWindow
-const w = ref(400)
-const h = ref(400)
+const position = ref({ x: 0, y: 0 });
+const tempPosition = ref({ x: 0, y: 0 });
+const windowsStore = useWindowsStore();
+const mailStore = useMailStore();
+const window = ref({});
+const ComponentName = props.nameOfWindow;
+const w = ref(400);
+const h = ref(400);
 
 const style = computed(() => ({
     height: `${h.value}px`,
@@ -61,13 +47,13 @@ const style = computed(() => ({
     "--content-padding-right": props.content_padding_right || "15%",
     "--content-padding-top": props.content_padding_top || "5%",
     "--content-padding-bottom": props.content_padding_bottom || "5%",
-    "--fullscreen": windowsStore.getFullscreenWindowHeight, 
+    "--fullscreen": windowsStore.getFullscreenWindowHeight,
 }));
 
 const setActiveWindow = () => {
-    windowsStore.setActiveWindow(window.value.windowId)
-    windowsStore.zIndexIncrement(window.value.windowId)
-}
+    windowsStore.setActiveWindow(window.value.windowId);
+    windowsStore.zIndexIncrement(window.value.windowId);
+};
 
 const toggleWindowSize = () => {
     if (windowsStore.getWindowFullscreen(window.value.windowId) == true) {
@@ -75,51 +61,46 @@ const toggleWindowSize = () => {
             fullscreen: false,
             windowId: window.value.windowId,
         };
-        windowsStore.setFullscreen(payload)
-        position.value.x = tempPosition.value.x
-        position.value.y = tempPosition.value.y
-    } else if (
-        windowsStore.getWindowFullscreen(window.value.windowId) == false
-    ) {
+        windowsStore.setFullscreen(payload);
+        position.value.x = tempPosition.value.x;
+        position.value.y = tempPosition.value.y;
+    } else if (windowsStore.getWindowFullscreen(window.value.windowId) == false) {
         const payload = {
             fullscreen: true,
             windowId: window.value.windowId,
         };
-        windowsStore.setFullscreen(payload)
-        const tempX = position.value.x
-        const tempY = position.value.y
-        tempPosition.value.x = tempX
-        tempPosition.value.y = tempY
-        position.value.x = 0
-        position.value.y = 0
+        windowsStore.setFullscreen(payload);
+        const tempX = position.value.x;
+        const tempY = position.value.y;
+        tempPosition.value.x = tempX;
+        tempPosition.value.y = tempY;
+        position.value.x = 0;
+        position.value.y = 0;
     }
-}
+};
 
 const minimizeWindow = () => {
     const payload = {
         windowState: "minimize",
         windowId: window.value.windowId,
     };
-    windowsStore.setWindowState(payload)
-}
+    windowsStore.setWindowState(payload);
+};
 
 const closeWindow = () => {
     const payload = {
         windowState: "close",
         windowId: window.value.windowId,
     };
-    windowsStore.setWindowState(payload)
-}
+    windowsStore.setWindowState(payload);
+};
 
 const getImagePath = (iconImage) => {
     const path = `../assets/win95Icons/${iconImage}`;
-    const modules =
-        import.meta.glob("../assets/win95Icons/*", {
-            eager: true
-        });
-    const mod = modules[path]
+    const modules = import.meta.glob("../assets/win95Icons/*", { eager: true });
+    const mod = modules[path];
     if (mod == undefined) {
-        return ""
+        return "";
     } else {
         return mod.default;
     }
@@ -127,67 +108,77 @@ const getImagePath = (iconImage) => {
 
 const checkMail = () => {
     if (mailStore.mailSubject == "New Message") {
-        return ""
+        return "";
     } else {
-        return mailStore.mailSubject
+        return mailStore.mailSubject;
     }
-}
+};
 
 const sendEmail = () => {
-    setTimeout(() => {
-        closeWindow()
-        mailStore.setMailSubject("")
-        mailStore.setMailSender("")
-        mailStore.setMailContent("")
-        alert("Email Sent!")
-    }, 500)
-}
+    const emailParams = {
+        subject: mailStore.mailSubject,
+        from_name: mailStore.mailSender,
+        message: mailStore.mailContent,
+    };
+
+    emailjs.send('service_ilu97hp', 'template_id', emailParams)
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            closeWindow();
+            mailStore.setMailSubject("");
+            mailStore.setMailSender("");
+            mailStore.setMailContent("");
+            alert("Email Sent!");
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+};
 
 const onChangeMailSubject = (e) => {
     if (e.target.value.replace(/\s/g, '') == "") {
-        mailStore.setMailSubject("New Message")
+        mailStore.setMailSubject("New Message");
     } else {
-        mailStore.setMailSubject(e.target.value)
+        mailStore.setMailSubject(e.target.value);
     }
-}
+};
 
 const onChangeMailSender = (e) => {
     if (e.target.value.replace(/\s/g, '') == "") {
-        mailStore.setMailSender("")
+        mailStore.setMailSender("");
     } else {
-        mailStore.setMailSender(e.target.value)
+        mailStore.setMailSender(e.target.value);
     }
-}
+};
 
 const onChangeMailContent = (e) => {
     if (e.target.value.replace(/\s/g, '') == "") {
-        mailStore.setMailContent("")
+        mailStore.setMailContent("");
     } else {
-        mailStore.setMailContent(e.target.value)
+        mailStore.setMailContent(e.target.value);
     }
-}
+};
 
 let isDragging = false;
 
 onMounted(() => {
-    window.value = windowsStore.getWindowById(ComponentName)
-    const draggableWindow = interact("#" + window.value.windowId)
+    window.value = windowsStore.getWindowById(ComponentName);
+    const draggableWindow = interact("#" + window.value.windowId);
     draggableWindow
         .draggable({
             listeners: {
                 move(event) {
-                    position.value.x += event.dx
-                    position.value.y += event.dy
+                    position.value.x += event.dx;
+                    position.value.y += event.dy;
                     // event.target.style.transform = `translate(${position.value.x}px, ${position.value.y}px)`
-                }
+                },
             },
             modifiers: [
                 interact.modifiers.restrictRect({
                     restriction: '#screen',
-                    endOnly: true
+                    endOnly: true,
                 }),
             ],
-            allowFrom: '#top-bar'
+            allowFrom: '#top-bar',
         })
         .on('dragstart', () => {
             isDragging = true;
@@ -207,33 +198,33 @@ onMounted(() => {
                 left: true,
                 right: true,
                 bottom: true,
-                top: false
+                top: false,
             },
             listeners: {
                 move(event) {
-                    const target = event.target
-                    w.value = event.rect.width
-                    h.value = event.rect.height
-                    target.style.width = `${w.value}px`
-                    target.style.height = `${h.value}px`
-                    position.value.x += event.deltaRect.left
-                    position.value.y += event.deltaRect.top
-                }
+                    const target = event.target;
+                    w.value = event.rect.width;
+                    h.value = event.rect.height;
+                    target.style.width = `${w.value}px`;
+                    target.style.height = `${h.value}px`;
+                    position.value.x += event.deltaRect.left;
+                    position.value.y += event.deltaRect.top;
+                },
             },
             modifiers: [
                 interact.modifiers.restrictSize({
                     min: {
                         width: 400,
-                        height: 400
+                        height: 400,
                     },
                     max: {
                         width: document.getElementById('screen').clientWidth - position.value.x,
-                        height: document.getElementById('screen').clientHeight - position.value.y
-                    }
+                        height: document.getElementById('screen').clientHeight - position.value.y,
+                    },
                 }),
             ],
-        })
-})
+        });
+});
 </script>
 
 <template>
@@ -242,7 +233,7 @@ onMounted(() => {
             'minimize': window.fullscreen == 'minimize',
         }" @click="setActiveWindow" @dragstart="setActiveWindow" @click.native="setActiveWindow">
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"></iframe>
-    <form @submit="sendEmail" action="https://docs.google.com/forms/d/e/1FAIpQLSfXLjZq3b9iNHh2XQGrCjkwrr1fOrqzcCPQ9tRSR2RHMV9lGw/viewform?usp=sf_link" class="window-style" id="container" target="hidden_iframe">
+    <form @submit.prevent="sendEmail" class="window-style" id="container">
         <div id="top-bar" class="top-bar-window" :class="
             windowsStore.activeWindow == window.windowId
                 ? 'top-bar'
@@ -300,16 +291,16 @@ onMounted(() => {
                 <hr />
                 <div class="subject-container">
                     <p style="margin: 8px">Subject:</p>
-                    <input name="entry.609946071" class="subject" v-model="mailSubject" v-on:input="onChangeMailSubject" type="text" required="true" />
+                    <input name="entry.609946071" class="subject" v-model="mailStore.mailSubject" @input="onChangeMailSubject" type="text" required />
                 </div>
                 <hr />
                 <div class="from-container" style="margin-bottom: 2px">
                     <p style="margin: 8px">From:</p>
-                    <input name="entry.367924729" class="subject" v-model="mailSender" v-on:input="onChangeMailSender" type="email" required="true" />
+                    <input name="entry.367924729" class="subject" v-model="mailStore.mailSender" @input="onChangeMailSender" type="email" required />
                 </div>
             </div>
 
-            <textarea name="entry.863594021" v-model="mailContent" v-on:input="onChangeMailContent" required="true"></textarea>
+            <textarea name="entry.863594021" v-model="mailStore.mailContent" @input="onChangeMailContent" required></textarea>
         </div>
     </form>
 </div>
