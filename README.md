@@ -1,4 +1,4 @@
-# [Windows 95 Themed Portfolio]
+# [Portfolio]
 
 
 # Frameworks and Libraries used
