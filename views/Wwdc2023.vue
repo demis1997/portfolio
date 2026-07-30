@@ -1,74 +1,86 @@
 <template>
-<div>
-    <img src="@/assets/Wwdc/ramenboi.gif" alt="Nethermind" class="hero" />
+  <div>
+    <img src="@/assets/Wwdc/ramenboi.gif" alt="Other work" class="hero" />
     <div class="inner-content">
-        <h3 class="heading"><b>The Ramen Shop</b></h3>
-        <p class="paragraph">
-Created an NFT collection with my girlfriend which allowed users to go to any of the 35+ ramen restaurants we were partnering with and get discounts or free food by showing their NFT at the restaurant. I was the sole developer of the project and created the smart contract, merkle proof and web app which were used for minting by our users.        </p>
+      <h3 class="heading">
+        <b>Wise Wolves Group / The Vault — Custody &amp; MPC</b>
+      </h3>
+      <p class="paragraph">
+        Blockchain Security Engineer (Oct 2024 – Jun 2026). Designed
+        institutional digital asset custody and transaction-authorization
+        infrastructure using Coinbase MPC, threshold ECDSA and distributed
+        approval workflows. Built secure signing orchestration, key lifecycle,
+        backup, recovery and approval controls for production custody use cases,
+        including threat modelling, architecture reviews and HSM evaluations.
+      </p>
     </div>
     <div class="inner-content">
-        <h3 class="heading"><b>Custodian work</b></h3>
-        <p class="paragraph">
-I have worked previously on multi part computation and custodians based on unbound security and coinbase mpc libraries. The coinbase library was using polynomials for advanced distributed key generation as well as threshold backups while unbound did not. I created a coordinators and threshold signing for the libraries and rewired all communication to pass through the coordinator rather than between them    </p>
-    </div>
-
-    <div class="inner-content">
-        <h3 class="heading"><b>Hackathons</b></h3>
-        <p class="paragraph">
-I often attend hackathons in my free time and bug bounties. Some of the blockchains I have worked on were Sui, Aptos, Venom and Zksync. I was one of the first few people to have used Cairo and participated in the first few hackathons which used move, a programming language based on rust. I also attended a venom hackathon where I used threaded solidity </p>
+      <h3 class="heading"><b>The Ramen Shop NFT</b></h3>
+      <p class="paragraph">
+        Created an NFT collection with real-world utility across 35+ partner
+        ramen restaurants — discounts and free food for NFT holders. Sole
+        developer for the smart contract, merkle-proof minting flow and web app.
+      </p>
     </div>
     <div class="inner-content">
-        <h3 class="heading"><b>CTFs and bounty hunting </b></h3>
-        <p class="paragraph">
-my ctfs and bounties        </p>
+      <h3 class="heading"><b>Open Source &amp; Community</b></h3>
+      <p class="paragraph">
+        Contributor to Slither, Optimism Bridge and projects in the Cairo, Aptos
+        and Sui ecosystems. Active across hackathons and early Move/Cairo
+        ecosystems. IBM Technology Award recipient (Bath Spa University, BSc
+        Computing 2015–2018).
+      </p>
     </div>
     <div class="inner-content">
-        <h3 class="heading"><b>Other Projects</b></h3>
-        <p class="paragraph">
-other projects go here        </p>
+      <h3 class="heading"><b>Domain Focus</b></h3>
+      <p class="paragraph">
+        Tokenized securities, issuance &amp; lifecycle management, compliance
+        controls, investor eligibility, custody, DeFi and liquid staking —
+        bridging institutional product workflows with production blockchain
+        engineering.
+      </p>
     </div>
-</div>
+  </div>
 </template>
 
 <style scoped>
 .hero {
-    width: 100%;
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 1px solid rgb(0, 0, 0, 0.1);
+  width: 100%;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 .images {
-    width: 100%;
-    height: auto;
-    /* object-fit: cover; */
+  width: 100%;
+  height: auto;
 }
 
 .images-full {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .subtitle {
-    font-size: 12px;
-    color: gray;
-    text-align: center;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
 }
 
 .heading {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .inner-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 h6,
 h3 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 </style>

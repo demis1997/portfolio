@@ -3,242 +3,207 @@
     <img class="w-full h-auto" src="@/assets/Biography/self.jpg" />
     <h2 class="font-bold text-2xl py-5">Dimitris Konstantinou</h2>
     <h4 class="text-gray-600 font-medium text-xs" style="padding-bottom: 10px">
-      Lead Solidity Engineer @ Intellect • Dorahacks active Participant • Open
-      Source Contributor • IBM Internet of Things Competition Winner • Past
-      Junior Fencing Champion
+      Tokenization Product &amp; Engineering Lead • Digital Assets • On-Chain
+      Financial Products • Institutional Blockchain
     </h4>
-    <h4 class="text-gray-600 font-medium text-xs">Cyprus, Europe 📍</h4>
+    <h4 class="text-gray-600 font-medium text-xs">
+      Limassol, Cyprus 📍 ·
+      <a style="color: #ff5733" href="mailto:demis.konstantinou16@gmail.com"
+        >demis.konstantinou16@gmail.com</a
+      >
+      ·
+      <a style="color: #ff5733" href="https://linkedin.com/in/demisk" target="_blank"
+        >linkedin.com/in/demisk</a
+      >
+      ·
+      <a style="color: #ff5733" href="https://github.com/demis1997" target="_blank"
+        >github.com/demis1997</a
+      >
+    </h4>
     <div class="flex flex-wrap mt-5 gap-2 items-center">
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Solidity"
-        src="https://img.shields.io/badge/-Solidity-orange
-"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="JavaScript"
-        src="https://img.shields.io/badge/-Javascript-yellow"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Move"
-        src="https://img.shields.io/badge/-Move-lightgrey"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Git"
-        src="https://img.shields.io/badge/-Git-critical"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="SwiftUI"
-        src="https://img.shields.io/badge/-Cairo-3e8bc3"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="React Native"
-        src="https://img.shields.io/badge/-Foundry-blue"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Vue"
-        src="https://img.shields.io/badge/-Hardhat-61b083"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Flask"
-        src="https://img.shields.io/badge/-Echidna-406893"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="MongoDB"
-        src="https://img.shields.io/badge/-Aderyn-4ca158"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="SQLite"
-        src="https://img.shields.io/badge/-Typescript-64a2c9"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Figma"
-        src="https://img.shields.io/badge/-Yul-8c5aee"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="JavaScript"
-        src="https://img.shields.io/badge/-Javascript-yellow"
-      />
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="SQLite"
-        src="https://img.shields.io/badge/-Typescript-64a2c9"
-      />
+      <img class="w-auto h-5 rounded-none text-xs" alt="Solidity" src="https://img.shields.io/badge/-Solidity-orange" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="EVM" src="https://img.shields.io/badge/-EVM-lightgrey" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="ERC-1400" src="https://img.shields.io/badge/-ERC--1400-blue" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="ERC-3643" src="https://img.shields.io/badge/-ERC--3643-61b083" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="Hyperledger Besu" src="https://img.shields.io/badge/-Hyperledger%20Besu-3e8bc3" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="Foundry" src="https://img.shields.io/badge/-Foundry-blue" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="Hardhat" src="https://img.shields.io/badge/-Hardhat-61b083" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="LayerZero" src="https://img.shields.io/badge/-LayerZero-406893" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="MPC" src="https://img.shields.io/badge/-MPC%20%2F%20Custody-critical" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="AWS" src="https://img.shields.io/badge/-AWS-FF9900" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="TypeScript" src="https://img.shields.io/badge/-Typescript-64a2c9" />
+      <img class="w-auto h-5 rounded-none text-xs" alt="Python" src="https://img.shields.io/badge/-Python-blue" />
+    </div>
+    <div class="pt-7">
+      <h3 class="underline font-bold text-md pb-1">Profile</h3>
+      <p class="font-thin text-sm pb-2.5">
+        Technical product and blockchain leader with 8+ years of software
+        engineering experience delivering institutional tokenization, digital
+        asset and security-critical platforms. Led smart contract development
+        for Deutsche Börse's D7 digital securities platform, contributing to
+        infrastructure supporting more than EUR 10 billion in issuance, and
+        designed modular digital asset capabilities for DTCC.
+      </p>
+      <p class="font-thin text-sm pb-2.5">
+        Experienced translating business, regulatory and operational needs into
+        platform workflows, technical specifications and delivery plans across
+        engineering, architecture, security, auditors and institutional
+        stakeholders. Combines hands-on blockchain depth with product thinking,
+        stakeholder communication and technical delivery leadership.
+      </p>
+    </div>
 
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="Python"
-        src="https://img.shields.io/badge/-Python-blue"
-      />
+    <div class="pt-7">
+      <h3 class="underline font-bold text-md pb-1">Core Expertise</h3>
+      <p class="font-thin text-sm pb-2.5">
+        <b>Product &amp; Delivery:</b> Requirements gathering, product
+        specifications, user stories &amp; workflows, prioritisation &amp;
+        roadmaps, stakeholder management, Agile planning &amp; delivery.
+      </p>
+      <p class="font-thin text-sm pb-2.5">
+        <b>Tokenization:</b> Digital securities issuance, asset lifecycle
+        management, compliance &amp; transfer controls, identity &amp; investor
+        eligibility, settlement-related workflows, on-chain investment products.
+      </p>
+      <p class="font-thin text-sm pb-2.5">
+        <b>Technical:</b> Solidity &amp; EVM architecture, ERC-1400 / ERC-3643,
+        Hyperledger Besu, smart contract security, custody &amp; MPC, AWS,
+        Foundry, LayerZero.
+      </p>
+    </div>
 
-      <img
-        class="w-auto h-5 rounded-none text-xs"
-        alt="HTML/CSS"
-        src="https://img.shields.io/badge/-HTML%2FCSS-yellowgreen"
-      />
-    </div>
     <div class="pt-7">
-      <h3 class="underline font-bold text-md pb-1">About Me</h3>
-      <p class="font-thin text-sm pb-2.5">
-        I’m a senior solidity engineer who has built scalable and secure
-        blockchain applications currently being used by tier 0 financial
-        institutions worldwide holding significant tvl (50m +). I have a passion
-        for gas optimisation and security as well as new technologies such as
-        Cairo, Move and Rust.
-      </p>
-      <p class="font-thin text-sm pb-2.5">
-        I have mentored both junior solidity developers and senior back end
-        engineers who have successfuly transitioned into solidity. While I
-        primarily work with large web2 financial institions (because they pay
-        the bills) I dabble with other defi concepts such as MEVs, AMMs, Lending
-        protocols, account abstration and upgradeability daily.
-      </p>
-      <p class="font-thin text-sm pb-2.5">
-        I was a javascript and C++ developer before I transitioned into web3,
-        working for a large holdings company (500m+). I found my passion for
-        web3 during the NFT bullrun where I created and secured multiple nft
-        contracts.
-      </p>
-      <p class="font-thin text-sm pb-2.5">
-        One of my greatest accomplishments was working with my girlfriend to
-        partner with 35+ restaurants worldwide and provide discounts + free food
-        to our 50k followers and our NFT holders.
-      </p>
-      <p class="font-thin text-sm pb-2.5">
-        In my spare time, I love to read sci fi books, listen to lofi and code
-        with my bulldog (he writes most of the code), play video games, collect
-        blu rays and mess aroung with random security tech like the flipper
-        zero.
-      </p>
+      <h3 class="underline font-bold text-md pb-1">Selected Product Experience</h3>
     </div>
+
     <div class="pt-7">
-      <h3 class="underline font-bold text-md pb-1">Employment History</h3>
-    </div>
-    <div class="pt-7">
-      <h3 class="pb-1"><b>Intellect (July 2023 - Present)</b></h3>
+      <h3 class="pb-1">
+        <b>Deutsche Börse D7 Digital Assets Platform</b>
+      </h3>
       <h6 class="text-gray-600 font-medium text-xs">
-        Lead Blockchain Developer
+        Lead Solidity Engineer (Contract via IntellectEU) · 2023 – 2026
       </h6>
       <p class="font-thin text-sm pb-2.5">
-      Worked on large scale Defi projects leading teams from concept to delivery 
-    Mentored multiple junior solidity developers and other developers transitioning into blockchain 
-Deployed multiple blockchain networks such as besu and private testnets, and leveraged cross chain 
-messaging protocols such as LayerZero to transfer data between chains and contracts 
- Developed and deployed multiple Securities related smart contracts for various tier 0 companies with 
-a large TVL (50m+) 
- Led the PolygonzZKEVM team and researched quantum proof alternatives to ECDSA signatures 
+        Led the smart contract workstream for tokenized securities capabilities
+        within Deutsche Börse's D7 digital post-trade environment. Translated
+        institutional digital securities requirements into smart contract
+        specifications, platform workflows and delivery milestones with
+        architects, auditors and stakeholders. Designed regulated asset
+        workflows covering issuance, investor positions, transfer restrictions,
+        lifecycle events and settlement-related processes. Developed a
+        configurable digital securities framework based on ERC-1400 principles
+        and contributed to infrastructure supporting more than EUR 10 billion in
+        issuance.
+      </p>
+    </div>
+
+    <div class="pt-7">
+      <h3 class="pb-1"><b>DTCC Digital Assets Platform</b></h3>
+      <h6 class="text-gray-600 font-medium text-xs">
+        Technical Lead / Lead Blockchain Engineer (Contract via IntellectEU) ·
+        2023 – 2026
+      </h6>
+      <p class="font-thin text-sm pb-2.5">
+        Designed modular institutional tokenization infrastructure enabling
+        financial institutions to configure, issue and manage regulated digital
+        assets on EVM-compatible networks. Built factories supporting ERC-20,
+        ERC-3643/TREX and ERC-721 assets, plus identity, eligibility,
+        whitelisting, delegation and transfer-control capabilities. Designed
+        collateral, escrow, loan-account and attestation components for
+        configurable financial-product workflows. Led two Solidity engineers and
+        contributed to technical specifications, architecture reviews, security
+        processes and milestone delivery.
+      </p>
+    </div>
+
+    <div class="pt-7">
+      <h3 class="underline font-bold text-md pb-1">Professional Experience</h3>
+    </div>
+
+    <div class="pt-7">
+      <h3 class="pb-1"><b>IntellectEU (Jul 2023 – Jun 2026)</b></h3>
+      <h6 class="text-gray-600 font-medium text-xs">Lead Solidity Engineer</h6>
+      <p class="font-thin text-sm pb-2.5">
+        Led blockchain delivery across tokenization, institutional finance,
+        interoperability and digital asset infrastructure. Partnered with client
+        stakeholders to convert business objectives into technical workstreams,
+        specifications and architecture proposals. Coordinated engineers,
+        architects, auditors and backend teams through planning, design reviews,
+        implementation and delivery. Mentored three Solidity engineers, reviewed
+        code and established engineering and security standards. Delivered
+        Hyperledger Besu networks, LayerZero integrations and research across
+        Polygon CDK/zkEVM and post-quantum cryptography.
       </p>
     </div>
 
     <div class="pt-7">
       <h3 class="pb-1">
-        <b>Inverse(September 2022 - June 2023)</b>
+        <b>Wise Wolves Group / The Vault (Oct 2024 – Jun 2026)</b>
       </h3>
-      <h6 class="text-gray-600 font-medium text-sm">
+      <h6 class="text-gray-600 font-medium text-xs">
+        Blockchain Security Engineer · Cyprus
+      </h6>
+      <p class="font-thin text-sm pb-2.5">
+        Designed institutional digital asset custody and
+        transaction-authorization infrastructure using Coinbase MPC, threshold
+        ECDSA and distributed approval workflows. Developed secure signing
+        orchestration, key lifecycle, backup, recovery and approval controls for
+        production custody use cases. Worked across security, infrastructure and
+        product requirements including threat modelling, architecture reviews
+        and HSM evaluations.
+      </p>
+    </div>
+
+    <div class="pt-7">
+      <h3 class="pb-1"><b>Inverse (Sep 2022 – Jun 2023)</b></h3>
+      <h6 class="text-gray-600 font-medium text-xs">
         Lead Blockchain Developer
       </h6>
       <p class="font-thin text-sm pb-2.5">
-       Developed and deployed the initial ERC 721 smart contracts  
- Developed and deployed the staking contract for the NFT game 
- Created a back-end service along with AWS for the WeBGL NFT game  
- Oversaw the website creation and connected the smart contracts  
- Audited and optimized the smart contracts used for the NFT game 
+        Led delivery of staking, NFT and AWS-backed blockchain services,
+        coordinating smart contracts with backend and infrastructure components.
+        Owned architecture decisions, implementation planning, reviews and
+        production delivery for blockchain product features.
       </p>
     </div>
 
     <div class="pt-7">
-      <h3 class="pb-1"><b>Nethermind (September 2022 - October 2022)</b></h3>
-      <h6 class="text-gray-600 font-medium text-xs">
-        Contractor, Smart Contract Auditor
-      </h6>
+      <h3 class="pb-1"><b>Nethermind (Jul 2022 – Oct 2022)</b></h3>
+      <h6 class="text-gray-600 font-medium text-xs">Smart Contract Auditor</h6>
       <p class="font-thin text-sm pb-2.5">
-  Audited MEVs, Vault contracts, AMMs and Cairo projects alongside the core auditing team 
-Generated documentation, gas optimization change reports and used various security tools such as 
-Echidna and slither for detecting vulnerabilities.
+        Audited DeFi protocols, vaults, AMMs, MEV systems and Cairo-based
+        applications using manual review, Slither, Echidna and fuzzing.
+        Collaborated with engineering teams on vulnerability remediation and
+        security improvements.
       </p>
     </div>
 
     <div class="pt-7">
-      <h3 class="pb-1"><b>Iarumas Holdings LTD, T & O Cyprus Planetarium, Creative Universe  (January 2019 - July 2022)</b></h3>
-      <h6 class="text-gray-600 font-medium text-xs">Technical Director/CTO</h6>
+      <h3 class="underline font-bold text-md pb-1">
+        Leadership &amp; Product Delivery
+      </h3>
       <p class="font-thin text-sm pb-2.5">
- I was responsible for the maintenance, upgrading and development of various software and 
-networks for the 3 companies 
-Leveraged Linux, C++, JavaScript and Python to perform security tasks 
- Reviewed all hardware and software used by the CEO and sent by various companies for security 
-purposes. 
-Created a cross country secure communication service for the company to use with other high net 
-worth clients 
+        Led initiatives involving engineering organisations with more than 50
+        contributors and directly mentored three Solidity engineers.
+        Participated in discovery, planning, estimation, milestone management,
+        architecture governance and stakeholder reviews across institutional
+        projects. Able to bridge executive objectives, financial-product
+        workflows and implementation details while maintaining a strategic
+        platform perspective.
       </p>
     </div>
 
     <div class="pt-7">
-      <h3 class="underline font-bold text-md pb-1">Projects & Achievements</h3>
-    </div>
-
-    <div class="pt-7">
-      <div class="">
-        <h3 class="pb-1"><b>The Ramen Shop NFT</b></h3>
-        <h6 class="text-gray-600 font-medium text-xs">
-         Along with other NFT projects
-        </h6>
-        <p class="font-thin text-sm pb-2.5">
-    Develop NFT contracts used by thousands and partnered with over 30 Ramen shops internationally 
-as one of the first NFT projects with real life utility. 
- Developed NFT minting contracts, ERC20 contracts and staking contracts for various companies and 
-individuals during the 2020 - 2022 NFT market  
- Managed, maintained and optimized various smart contracts over a period of a year and a half 
-performing monthly maintenance and consulting after contract deployment 
-        </p>
-      </div>
-
-      <div class="pt-7">
-        <h3 class="pb-1"><b>IBM Internet Of Things Award 2019</b></h3>
-        <h6 class="text-gray-600 font-medium text-xs">Watson AI team</h6>
-        <p class="font-thin text-sm pb-2.5">
-Utilised raspberry pi and Raspbian OS to integrate a small llm into an order taking system/assistant. The project was showcased at an IBM convention in Los Angeles and awarded for our contributions to the system.
-        </p>
-      </div>
-
-      <div class="pt-7">
-        <h3 class="pb-1">
-          <b
-            >Web3 Projects and Milestones</b
-          >
-        </h3>
-        <h6 class="text-gray-600 font-medium text-xs">Awarded</h6>
-        <p class="font-thin text-sm pb-2.5">
-   Have worked on over 100+ smart contracts including liquid staking protocols, AMMs, MEVs, Swaps, 
-NFts and more. 
-Contributed to Slither by trail of bits and various other large protocols and technologies (Optimism 
-Bridge, Venom, Sui, Aptos) and was one of the first people to work with Cairo programming  
-        </p>
-      </div>
-
-
-      <div class="pt-7">
-
-        <p class="font-thin text-sm pb-2.5">
-          And check out my speech with the local news outlets and the 200+ attendants regarding cryptocurrency awareness and youth
-         
-          <a
-            style="color: #ff5733"
-            href="https://www.youtube.com/watch?v=YITz9CtsnAY&t=1s"
-            >right here</a
-          >!
-        </p>
-      </div>
+      <h3 class="underline font-bold text-md pb-1">Education, Award &amp; Community</h3>
+      <p class="font-thin text-sm pb-2.5">
+        <b>BSc Computing (Software Development)</b> — Bath Spa University,
+        2015–2018
+      </p>
+      <p class="font-thin text-sm pb-2.5">IBM Technology Award Recipient</p>
+      <p class="font-thin text-sm pb-2.5">
+        Open source contributor to Slither, Optimism Bridge and projects in the
+        Cairo, Aptos and Sui ecosystems.
+      </p>
     </div>
 
     <div class="pt-7">
@@ -247,7 +212,8 @@ Bridge, Venom, Sui, Aptos) and was one of the first people to work with Cairo pr
         style="color: #ff5733"
         href="/files/dimitriscv.pdf"
         class="font-thin text-sm pb-2.5"
-        >Check out my résumé here.</a
+        target="_blank"
+        >Download my tokenization CV (PDF).</a
       >
     </div>
   </div>

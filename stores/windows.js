@@ -81,7 +81,7 @@ export const useWindowsStore = defineStore("windows", {
       {
         windowId: "NOSSAFLEXWindow",
         windowState: "close",
-        displayName: "Intellect",
+        displayName: "IntellectEU",
         windowComponent: "window",
         windowContent: "nossaflex",
         windowContentPadding: {
@@ -94,7 +94,7 @@ export const useWindowsStore = defineStore("windows", {
         positionX: "6vw",
         positionY: "12vh",
         iconImage: "noss.webp",
-        altText: "NOSSAFLEX App",
+        altText: "IntellectEU tokenization work",
         fullscreen: false,
         showInAppGrid: true,
         showInNavbar: true,
@@ -165,7 +165,7 @@ export const useWindowsStore = defineStore("windows", {
       {
         windowId: "AppleWWDC2023",
         windowState: "close",
-        displayName: "Other",
+        displayName: "Custody & More",
         windowComponent: "window",
         windowContent: "wwdc2023",
         windowContentPadding: {
@@ -178,7 +178,7 @@ export const useWindowsStore = defineStore("windows", {
         positionX: "4vw",
         positionY: "12vh",
         iconImage: "apple3.png",
-        altText: "Apple WWDC 2023",
+        altText: "Custody, MPC and other work",
         fullscreen: false,
         showInAppGrid: true,
         showInNavbar: true,
