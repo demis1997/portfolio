@@ -28,3 +28,9 @@ pnpm-debug.log*
 *.sln
 *.sw?
 .qodo
+
+# Local environments and generated artifacts
+node_modules/
+.env
+.env.*
+!.env.example
